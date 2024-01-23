@@ -1,0 +1,18 @@
+.headerList {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+
+.active{
+  border-color: var(--text-color) !important;
+}
+  @media screen and (max-width: 650px) {
+    .headerList{
+      flex-direction: column;
+      padding: 20px;
+      gap:20px
+    }
+  }

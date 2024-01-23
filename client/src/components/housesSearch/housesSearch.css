@@ -1,0 +1,211 @@
+.listSearch {
+    flex: 1;
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -18px;
+
+    
+}
+  
+  .housesSearchTitle{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .housesSearchItem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    color: rgb(43, 43, 43);
+    font-size: 0.9rem;
+  }
+
+  .housesSearchItem input:focus, .isOptionInput:focus {
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+    
+  }
+
+  .housesSearchItem span .isOptionText{
+   color:#205072;
+  }
+  
+  .housesSearchItem>label{
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  
+  .housesSearchItem>input{
+    max-width: 190px;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    padding: .15rem .5rem;
+    min-height: 30px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+    border-bottom: 1px solid #fff;
+  }
+  .housesSearchItem>input:active, .housesSearchItem>input:focus{
+    border-bottom: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .housesSearchItem>span{
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    color: #fff;
+    max-width: 190px;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+  }
+  .housesSearchItem>span:active, .housesSearchItem>span:focus{
+    border-bottom: 2px solid #fff;
+
+  }
+  
+  .housesSearchOptions{
+    padding: 5px 0 0 0 ;
+  }
+  
+  .housesSearchOptionItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 12px;
+  }
+  
+  .housesSearchOptionInput{
+    width: 50px;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+  }
+
+  .housesSearchOptionInput:focus{
+    outline: none;
+  }
+
+  .housesSearchOptionInput::-webkit-outer-spin-button,
+  .housesSearchOptionInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .lsItem label{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .listSearch>button{
+    padding: 10px;
+    background-color: var(--button-bg-color);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px -18px;
+  }
+
+  .lsItem select {
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: var(--main-bg-color);
+    border: none;
+    padding: .15rem .10rem;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    color: #ddd;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px -18px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.lsItem select:focus {
+    border-bottom: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+} 
+.lsItem select option{
+  background-color: var(--main-bg-color);
+  font-weight: 500;
+}
+.lsItem {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.lsItem::after {
+  content: "\25BC"; 
+  position: absolute;
+  right: 5px;
+  top: 63%;
+  transform: translateY(-50%);
+  color: var(--text-color);
+  pointer-events: none; 
+}
+
+.lsItem:hover::after {
+  color: #fff;
+}
+
+.showPopularCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.showPopularCheckbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  background-color: var(--main-bg-color);
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  box-shadow: 0px 10px 20px -18px;
+  transition: background-color 0.2s ease;
+}
+
+.showPopularCheckbox input[type="checkbox"]:checked::before {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--button-bg-color);
+  font-weight: bold;
+}
+
+.showPopularCheckbox input[type="checkbox"]:checked {
+  background-color: var(--text-color);
+}
+
+.showPopularCheckbox label {
+  color: var(--text-color);
+  cursor: pointer;
+}

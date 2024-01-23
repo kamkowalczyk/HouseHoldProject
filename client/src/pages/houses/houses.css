@@ -1,0 +1,22 @@
+.listContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+  }
+  
+  .listWrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .listResult {
+    flex: 3;
+  }
+
+  #root > div > div.listContainer > div > div.listSearch > div:nth-child(3) > span{
+    color:#205072;
+  }

@@ -1,0 +1,70 @@
+:root {
+  --main-text-color: #4a4a4a;
+  --hover-text-color: #3a5a40;
+  --footer-background-color: #f8f9fa; 
+}
+
+.footer {
+  color: var(--main-text-color);
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fLists {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 20px 10px 10px 10px;
+}
+
+.fList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 150px; 
+}
+
+.fListItem {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.fListItem:hover, .fListItem:focus {
+  color: var(--hover-text-color);
+  text-decoration: underline; 
+}
+
+.fText {
+  color: var(--main-text-color);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25px;
+  border-top: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .fLists {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    font-size: 12px;
+    padding: 15px;
+  }
+}

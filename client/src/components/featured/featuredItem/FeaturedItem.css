@@ -1,0 +1,25 @@
+.featuredItem{
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    flex:1;
+    cursor: pointer;
+  }
+  
+  .featuredImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 650px) {
+    .featuredItem{
+      width: 90%;
+      height: 200px;
+      margin-left: auto;  
+      margin-right: auto;
+    }
+    
+  }

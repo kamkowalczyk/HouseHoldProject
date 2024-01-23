@@ -1,0 +1,59 @@
+.header {
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    padding: 10px;
+  }
+  
+  .headerContainer.listMode {
+    margin: 20px 0px 0px 0px;
+  }
+  
+  
+  .headerDesc {
+    margin: 20px 0px;
+    color: white;
+  }
+  
+  .headerBtn {
+    background-color: var(--button-bg-color);
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+
+  @media screen and (max-width: 650px) {
+    .headerSearchItem:not(:has(.headerBtn)){
+      width: 90%;
+      border: 1px solid #205072;
+      padding: 10px;
+      border-radius: 1rem;
+      background-color: #fff;
+    }
+    .rdrCalendarWrapper {
+      margin-top: 70px;
+      left: 0;
+      width: 100%;
+    }
+    .rdrMonth{
+      width: auto !important;
+    }
+    .options{
+      top: 30px;
+      right: inherit;
+      left: 50px;
+    }
+  }

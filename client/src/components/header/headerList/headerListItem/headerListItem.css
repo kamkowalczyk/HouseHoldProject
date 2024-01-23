@@ -1,0 +1,16 @@
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .headerListItem > a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .headerListItem.active {
+    border: 1px solid rgb(58, 225, 255);
+    padding: 10px;
+    border-radius: 20px;
+  }

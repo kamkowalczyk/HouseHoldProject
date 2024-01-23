@@ -1,0 +1,117 @@
+.checkoutWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.checkoutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkoutTitle {
+  font-size: 24px;
+  color: #333;
+}
+
+.checkoutTitle .icon{
+  margin-right: 10px;
+}
+
+.break {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd; 
+  margin: 10px 0;
+}
+
+.leftWrapper {
+  flex: 1;
+}
+
+.rightWrapper {
+  flex: 1;
+}
+.rightWrapper .checkoutInfoWrapper{
+  padding:0 0 20px 0;
+}
+
+.checkoutInfoTitle {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.icon{
+  margin-right: 5px;
+}
+
+.checkoutInfoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkoutInfoItem {
+ padding:15px 0 10px 0
+}
+
+.checkoutInfoKey {
+  font-size: 14px !important;
+  font-weight: bold;
+  color: #333;
+}
+
+.checkoutInfoValue {
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.checkoutInfoValue.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.checkoutButton {
+  padding: 10px 15px;
+  background-color: #588157;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkoutButton:disabled {
+  background-color: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+.checkoutButton .icon{
+  margin-right: 5px;
+}
+.checkoutInfoItem > span {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.checkoutInfoItem > span.error {
+  color: red;
+}
+
+.checkoutInfoItem > span.success {
+  color: green;
+}

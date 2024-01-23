@@ -1,0 +1,117 @@
+.navbar {
+  height: 50px;
+  background-color: var(--secondary-bg-color);
+  display: flex;
+  justify-content: center;
+  min-width: 250px;
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+.logo_icon {
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+.navButton {
+  text-decoration: none;
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 400;
+  background-color: var(--button-bg-color);
+  border-radius: 10px;
+}
+.user_icon {
+  padding-right: 4px;
+  font-size: 13px;
+}
+.logout_icon {
+  margin-right: 5px;
+}
+.username {
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.navItems {
+  display: flex;
+  margin-right: 30px;
+}
+
+.hamburgerIcon {
+  display: none;
+  font-size: 1.5rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.settings_icon {
+  display: block;
+  font-size: 18px;
+  margin:8px 0;
+  cursor: pointer;
+}
+
+.settingsDropdown {
+  position: absolute;
+  top: 50px;
+  margin-left: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  z-index: 100;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.settingsDropdown a {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+  text-decoration: none;
+}
+.settingsDropdown a:hover{
+  color: #2d6a4f;
+}
+
+.settingsDropdown a:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburgerIcon {
+    display: block;
+  }
+  .navButton {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hamburgerIcon {
+    display: block;
+  }
+  .username {
+    display: none;
+  }
+}
